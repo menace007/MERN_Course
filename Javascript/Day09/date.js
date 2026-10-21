@@ -23,6 +23,6 @@ const date3 = new Date("2028-07-14T00:00:00");
 const date4 = date2-date1;
 const days = Math.floor(date4/(1000*60*60*24));
 const hour = Math.floor((date2/(1000*60*60))%24);
-const minutes = Math.floor((date2/(100*60))%60);
+const minutes = Math.floor((date2/(1000*60))%60);
 const seconds = Math.floor((date2/(1000))%60);
 console.log("Countdown timer: ", days, hour, minutes, seconds);
